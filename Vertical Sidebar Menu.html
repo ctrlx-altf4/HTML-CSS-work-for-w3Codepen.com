@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<style>
+body{
+  font-family: "Open Sans", arial;
+  background: rgb(62,189,162);
+  background: linear-gradient(56deg, rgba(62,189,162,1) 0%, rgba(197,113,128,1) 63%);
+  background: -webkit-linear-gradient(56deg, rgba(62,189,162,1) 0%, rgba(197,113,128,1) 63%);
+  color:#fff;
+  font-weight:300;
+}
+nav{
+  background:#F7F7F7;
+  position:absolute;
+  top:0;
+  bottom:0;
+  height:100%;
+  left:0;
+  width:55px;
+  /*overflow:hidden;*/
+  -webkit-transition:width .2s linear;
+  transition:width .2s linear;
+  /*-webkit-transform:translateZ(0) scale(1,1);*/
+}
+a {
+position:relative;
+width:250px;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#8a8a8a;
+font-size: 13px;
+text-decoration:none;
+transition:all .14s linear;
+font-family: 'Strait', sans-serif;
+border-top:1px solid #f2f2f2;  
+}
+.fa {
+position: relative;
+width: 55px;
+height: 36px;
+text-align: center;
+top:12px; 
+font-size:20px;
+}
+nav .nav-text  {
+position:relative;
+top:12px;
+/*display:table-cell;
+vertical-align:middle;*/
+/*width:190px;*/
+/*font-family: 'Titillium Web', sans-serif;*/
+}
+
+
+a:hover{
+color:#fff;
+background-color:#00bbbb;
+}
+
+nav:hover{
+  width:250px;
+}
+
+
+
+
+/* ScrolBar  */
+.scrollbar
+{
+height: 90%;
+width: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+
+.scrollbar:hover{
+  height: 90%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Style */ 
+#style-1::-webkit-scrollbar-track
+{
+border-radius: 2px;
+}
+
+#style-1::-webkit-scrollbar
+{
+width: 5px;
+background-color: #F7F7F7;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #BFBFBF;
+}
+/* Scrollbar End */ 
+
+
+/* Darker element side menu Start*/
+.mid-block
+{
+background-color:#ededed;
+text-transform:capitalize;
+box-shadow:inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55), inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);;
+}
+
+nav:hover> .logo > h2{
+  text-indent: -999px
+}
+nav:hover> .logo > h2:before{
+  text-indent: 0px;
+  content:'OnAirCode';
+  float:left;
+  position:relative;
+  left:50px;
+} 
+nav:hover> .logo{
+  width:250px;
+}
+nav:hover> .label{
+  height:50px;
+  width:250px;
+  opacity:1;
+  color:black;
+  text-align:center;
+}
+
+.logo{
+  width:55px;
+  font-family: 'Tangerine', serif;
+  text-align:center;
+  transition:all 0.5s ease;
+}
+.label{
+  height:0px; 
+  float:left;
+  width:55px;
+  transition:all 0.5s ease;
+  font-family: 'Tangerine', serif;
+  opacity:0;
+}
+
+</style>
+</head>
+<body>
+
+<nav>  
+  <a class="logo" href="">
+    <h2 style="color:red">O<span style="color:blue">C<span></h2>
+  </a> 
+<div class="label">Sidebar Navigation Menu Tutorial</div>
+<div class="scrollbar" id="style-1">
+  <a href=" ">
+    <i class="fa fa-home fa-lg"></i>
+    <span class="nav-text">Home</span>
+  </a>
+
+  <a href=" ">
+    <i class="fa fa-user fa-lg"></i>
+    <span class="nav-text">Profile</span>
+  </a>
+  
+  <a href=" ">
+      <i class="fa fa-envelope-o fa-lg"></i>
+      <span class="nav-text">E-mail</span>
+  </a>
+  
+  <a href=" ">
+    <i class="fa fa-clock-o fa-lg"></i>
+    <span class="nav-text">Schedule</span>
+  </a>
+  <div class="mid-block">
+     <a  href=" ">
+  <i class="fa fa-desktop fa-lg"></i>
+  <span class="nav-text">Technology</span>
+  </a>
+
+    <a href=" ">
+     <i class="fa fa-html5 fa-lg"></i>
+      <span class="nav-text">HTML5</span>
+  </a>
+  
+  <a  href=" ">
+  <i class="fa fa-css3 fa-lg"></i>
+  <span class="nav-text">CSS3</span>
+  </a>
+
+  <a  href=" ">
+    <i class="fa fa-flask fa-lg"></i>
+    <span class="nav-text">Web Tools</span>
+  </a>
+
+  <a  href=" ">
+    <i class="fa fa-picture-o fa-lg"></i>
+    <span class="nav-text">Art & Design</span>
+  </a>
+
+  <a  href=" ">
+      <i class="fa fa-align-left fa-lg"></i>
+      <span class="nav-text">Magazines
+  </span>
+  </a>
+  
+  <a  href=" ">
+    <i class="fa fa-gamepad fa-lg"></i>
+    <span class="nav-text">Games</span>
+  </a>
+  
+  <a  href=" ">
+    <i class="fa fa-glass fa-lg"></i>
+    <span class="nav-text">Life & Style</span>
+  </a>
+    
+  <a href=" ">
+    <i class="fa fa-rocket fa-lg"></i>
+    <span class="nav-text">Funs</span>
+  </a>  
+  </div>
+   <a href=" ">
+    <i class="fa fa-book fa-lg"></i>
+    <span class="nav-text">Documentation</span>
+  </a>
+  <a href=" ">
+   <i class="fa fa-cog fa-lg"></i>
+    <span class="nav-text">Setting</span>
+  </a>
+  <a href=" ">
+    <i class="fa fa-question-circle fa-lg"></i>
+    <span class="nav-text">Help</span>
+  </a>
+ 
+  
+  </div> 
+</nav> 
+  
+</body>
+
+</html>
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+body {
+  padding-top: 130px;
+  color: black;
+  background-color:  #CEF986;
+  overflow-y: hidden;
+  text-align:center;
+}
+
+h1{
+  font-family: 'Acme', sans-serif;
+}
+ul {
+  counter-reset: id;  
+  text-align:left;
+  background-color:#DAF7A6;
+  box-shadow: 2px 2px 2px 1px #313132;
+  max-width: 350px;
+  position:absolute;
+  height:70%;
+  left:50%;
+  transform: translateX(-50%);
+  padding:0px;
+  overflow-y:hidden;
+}
+li {
+  counter-increment: id; 
+  padding: 12px 5px;
+  border-bottom:1px solid #A2B87C;
+  cursor:pointer;
+  display: flex;
+  align-items: center;
+}
+li::before {
+  content: counter(id, decimal-leading-zero);
+  font-size: 1.6rem;
+  font-weight: bolder;
+  min-width: 50px;
+  padding-left:12px;
+  padding-right:0px;
+  color:black;
+}
+li:hover{
+  background-color:#900C3F;
+  color:white;
+}
+li:hover:before{
+  color:white;
+}
+ul:hover{
+  overflow-y:scroll;
+}
+ul::-webkit-scrollbar-track
+{
+border-radius: 10px;
+  background-color: #white;
+}
+
+ul::-webkit-scrollbar
+{
+width: 5px;
+background-color: #F7F7F7;
+}
+
+ul::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #C70039;
+}
+/* Scrollbar Style  
+*/
+
+/* List */
+/*ul {
+  counter-reset: id;  
+  padding: 0;
+  max-width: 350px;
+  position:absolute;
+  height:0%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-25%);
+  overflow-y:hidden;
+  background-color:#DAF7A6;
+  box-shadow: 2px 2px 2px 1px #313132;
+}
+
+ul:hover{
+  overflow-y:scroll;
+}
+*/
+
+
+</style>
+</head>
+<body>
+  <h1>Custom Scrolldown List Item Style</h1>
+<ul>
+  <li>Css List Style</li>
+  <li>Unordered List CSS</li>
+  <li>Ul List Style</li>
+  <li>HTML Custom list tutorial</li>
+  <li>Css list style example</li>
+  <li>HyperText Markup Language</li>
+  <li>Cascade StyleSheet</li>
+  <li>JavaScript- Scripting Language</li>
+  <li>Jquery - JavaSCript framework</li>
+  <li>Node.js- javaScript on Serverside</li>
+  <li>Asp.net - MVC framework with C#</li>
+  <li>Php HyperText Processor</li>
+  <li>Wordpress-Content Management System</li>
+  <li>Java Object Oriented Programming Language</li>
+  <li>Python All purpose Dynamic Programming Language</li>
+  <li>Ruby  Dynamic Programming language for Website and mobile apps</li>
+</ul>
+
+</body>
+
+</html>

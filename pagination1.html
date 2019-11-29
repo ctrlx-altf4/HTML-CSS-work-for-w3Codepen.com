@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<style>
+ body{
+  background-color:#95A5A6
+}
+.pagination{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.pagination { 
+   background-color: #eee;
+   display: inline-block; 
+    border-radius:10px;
+    font-family: 'Anton', sans-serif;
+    padding:15px;
+}
+.pagination a { 
+    font-size:20px; 
+    color: #577A7C; 
+    float: left; 
+    text-align:center;
+    padding:14px  5px;
+    text-decoration: none; 
+    width:50px; 
+    padding:14px  5px;
+    border-radius:10px;
+}
+.pagination a:hover:not(.active) { 
+    background-color: #12E8F5; 
+    color:white;
+} 
+.pagination a.active { 
+    background-color:#009900; 
+    color:white;
+}
+/*#left{
+  font-size:20px;
+   border-radius:10px 0px 0px 10px;
+} 
+#right{
+ font-size:20px;
+   border-radius:0px 10px 10px 0px;
+}*/
+</style>
+</head>
+<body>
+
+<div class="pagination">
+  <a href="#" id="left">❮</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#" class="active">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#" id="right">❯</a>
+</div>
+
+</body>
+
+</html>
+

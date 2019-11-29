@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!--  font-awesome CDN for icon-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+/* ============================================================
+                    Removing the default Radio button
+==============================================================*/
+
+.accordion_menus input {
+    display: none;
+}
+/* ============================================================
+                    Adding some beauty
+==============================================================*/
+body {
+  background: #ecb7b7;
+  padding: 5em;
+}
+h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  text-align:center;
+  margin-bottom:10vh;
+}
+.accordion_menus {
+  background: #5ab2ca;
+  width: 50%;
+  margin: 10px auto 30px auto;
+  border-radius: 5px;
+  color: white;
+}
+
+.accordion_menus label {
+  display: block;
+  height: 30px; 
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1.5em 1.5em;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+/* ============================================================
+                    Hiding the content section
+==============================================================*/
+.accordion_menus section {
+    background: white;
+    color: #3f3c3c;;
+    overflow: hidden;
+    padding-left: 3vw;
+    height:0;
+    transition:height 0.3s ease-in-out;
+}
+/* ============================================================
+  Displaying the hidden cotent once button is selected/checked
+==============================================================*/
+.accordion_menus input:checked ~ section {
+    height:140px;
+}
+/* ============================================================
+                    Adding drop down icon
+==============================================================*/
+
+.accordion_menus label::after,.accordion_menus input:checked + label:hover:after {
+  font-family: "FontAwesome";
+  content: "\f13a";
+  padding:2px 2px 2px 2px;
+  font-size: 1.5em;
+  float: right;
+  transition: .3s all;
+  transform: rotate(-180deg);
+}
+/* ============================================================
+                   Hover effects 
+==============================================================*/
+.accordion_menus label:hover {
+     background: #357E92;
+}
+.accordion_menus input:checked + label{
+  background: #115B59;
+  color: black;
+}
+
+.accordion_menus label:hover:after{
+    color:white;
+    transform: rotate(0deg);
+}
+
+
+/* ============================================================
+                    Sub-heading CSS 
+==============================================================*/
+.accordion_menus .accordion_menus{
+  display:none;
+  width:100%;
+  margin:0;
+  padding:0;
+  background: #f1f1f1;
+  color: black;
+}
+.accordion_menus .accordion_menus label:after{
+  color:Black;
+}
+.accordion_menus input:checked +label +section +.accordion_menus{
+  display:block;
+}
+.accordion_menus .accordion_menus label:hover{
+  background-color:grey;
+}
+.accordion_menus .accordion_menus input:checked +label{
+  background-color: #AB9595
+};
+
+
+</style>
+</head>
+<body>
+<h2>Vertical Accordion with Pure CSS</h2>
+ <div class="accordion_menus">
+  <div>
+    <input id="accordion1" name="accordion_menus" type="radio">
+    <label for="accordion1">HTMl</label>
+    <section class="html">
+        <h4>This is pure HTML and CSS Accordion Menu designed for your next project</h4>
+        <p>HTML:used for structuring</p>
+    </section>
+
+    <!-- ============================================================
+                    Sub-heading HTML 
+    ==============================================================-->
+    <div class="accordion_menus">
+          <input id="sub-accordion1" name="sub-accordion_menus1" type="checkbox">
+          <label for="sub-accordion1">sub-Menu</label>
+          <section>
+            <h4>This is pure HTML and CSS Accordion Menu designed for your next project</h4>
+            <p>sub-HTML1:used for structuring</p>
+          </section>
+          <input id="sub-accordion2" name="sub-accordion_menus1" type="checkbox">
+          <label for="sub-accordion2">sub-Menu</label>
+          <section>
+            <h4>This is the sub-header of Accordion menu developed with pure CSS</h4>
+            <p>sub-HTML2:used for structuring</p>
+          </section>
+    </div>
+    <!-- ============================================================-->
+                  
+  </div>
+
+        <div>
+          <input id="accordion2" name="accordion_menus" type="radio">
+          <label for="accordion2">CSS</label>
+          <section class="CSS">
+           <h4>This is pure css Accordion  design using HTML and CSS only</h4>
+           <p>CSS:Used for page styling</p>
+          </section>
+        </div>
+        <div>
+          <input id="accordion3" name="accordion_menus" type="radio">
+          <label for="accordion3">JavaScript</label>
+          <section class="js">
+            <h4>In this tutorial we are designing Vertical Accordion for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+          </section>
+        </div>
+        <div>
+          <input id="accordion4" name="accordion_menus" type="radio">
+          <label for="accordion4">Bootstrap</label>
+          <section class="js">
+             <h4>In this example we won't be using Bootstrap for Accordion development. </h4>
+        <p>JS: Not used</p>
+          </section>
+        </div>
+      </div>
+  
+
+
+
+</body>
+
+</html>

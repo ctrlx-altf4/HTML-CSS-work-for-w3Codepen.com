@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tabs .tab{
+   overflow: hidden;
+   width:100%;  
+}
+
+.tabs .tab .radioClass{
+    display:none;
+}
+.tabs .content {
+    position: absolute;
+    opacity:0;
+    padding:0;
+    top:110px;
+    left:33%;
+    right:22%;
+    color: black;
+    background:#DCE9F1;   
+}
+.tabs>.tab .radioClass:checked ~ .content {
+  opacity:1;
+  transition: opacity 1s ease;
+}
+.tabs .tab label {
+    display: block;
+    font-family: 'Saira Stencil One', cursive;
+    padding:10px;
+    cursor: pointer;
+    position: relative;
+    color: WHITE;
+    background-image:linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);  
+    margin-bottom: 1px;
+    border-radius:0px 5px 5px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+html{
+  height:100%;
+}
+body{
+ background-image:linear-gradient(to right, #00c9ff, #92fe9d);
+ background-size:cover;
+  background-repeat:no-repeat;
+}
+p{
+  text-align:justify;
+}
+.header{
+  color: Black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top:20px;
+}
+
+.tabs{
+  display:flex;
+  flex-direction:column;
+  margin-left:20%;
+  margin-right:20%;
+  padding:0;
+  background:#DCE9F1;
+  border-radius:5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
+}
+
+
+
+
+.tabs .tab label:hover{
+  background:#314755;
+  transition:all 400ms ease;
+}
+
+
+.tabs>.tab .radioClass:checked + label {
+    background: #DCE9F1;
+    color: BLACK;
+    padding: var(--underline-height) 1;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+  <h2 class="header">Pure HTML CSS Built Tab </h2>
+<ul class="tabs">
+    
+    <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" checked id="tab1" />
+        <label for="tab1">HTML</label>
+        <div class="content">
+          <h3>This is pure HTML CSS tabs designed for your next project</h3>
+          <p>HTML:used for structuring</p>
+          <p>Whenever you opt for web development, the first thing that you should get yourself prepared for is HTML development</p>
+          
+        </div>
+    </li>
+    
+    <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab2" />
+      <label for="tab2">CSS</label>   
+      <div  class="content">
+          <h3>This is pure css tabs design using HTML and CSS only</h3>
+        <p>CSS:Used for page styling</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          
+       </div>
+    </li>
+
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab3" />
+      <label for="tab3">JavaScript</label>   
+      <div  class="content">
+          <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+          
+      </div>
+    </li>
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab4" />
+      <label for="tab4">Bootstrap</label>   
+      <div  class="content">
+          <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          
+      </div>
+    </li>
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab5" />
+      <label for="tab5">Material</label>   
+      <div  class="content">
+          <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+          
+      </div>
+    </li>
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab6" />
+      <label for="tab6">Jquery</label>   
+      <div  class="content">
+          <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          
+      </div>
+    </li>
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab7" />
+      <label for="tab7">PHP</label>   
+      <div  class="content">
+          <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+          
+      </div>
+    </li>
+    
+  </ul>
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<style>
+body{
+  background-color:#17E4B2
+}
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.pagination { 
+   background-color: #eee;
+   display: inline-block; 
+   padding:22px;
+     border-top-left-radius: 100px 100%;
+  border-bottom-left-radius: 100px 100%;
+  border-top-right-radius: 100px 100%;
+  border-bottom-right-radius: 100px 100%;
+    box-shadow:5px 5px 10px 2px #A4A39B;
+    font-family: 'Anton', sans-serif;
+} 
+.pagination a { 
+    font-size:15px; 
+    color: black; 
+    float: left; 
+    text-align:center;
+    padding:8px  2px;
+    text-decoration: none; 
+    margin-right:18px;
+    width:38px;
+    border-radius:50%;
+    background-color:white;
+  box-shadow:2px 3px 3px 2px #A4A39B;
+  transition: all 0.4s ease;
+} 
+.pagination a.active { 
+    background-color:#0A5F87; 
+  color:white;
+} 
+.pagination a:hover:not(.active) { 
+    background-color: #0921CD; 
+    color:white;
+} 
+#truncated{
+  width:28px;
+/*   padding:0px 4px; */
+  padding:0px;
+  padding-bottom:4px;
+  margin-top:5px;
+  font-size:14px;
+  height:25px;
+}
+#left,#right{
+  width:25px;
+  height:25px;
+  padding:0px;
+  margin-top:10px;
+  border-radius:50%;
+  
+}
+#left{
+  margin-right:30px;
+} 
+#right{
+  margin-left:12px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+  <a href="#" id="left">&#8594</a>
+<div class="pagination">
+
+  <!--  -->
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#" class="active">3</a>
+  <a href="#">4</a>
+  <a href="#" id="truncated">. . .</a>
+  <a href="#">9</a>
+  <a href="#">10</a>
+
+</div>
+  <a href="#" id="right">❯</a
+ </div>
+
+</body>
+
+</html>
+

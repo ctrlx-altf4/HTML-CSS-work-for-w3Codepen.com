@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+body{ 
+background-color:#0A4A8A;
+}
+h1
+{
+  font-family: 'Saira Stencil One', cursive;
+  color:yellow;
+  text-align:center;
+  margin-top:10%;
+}
+p {  
+  margin-top:0px;
+}
+
+.bg{
+  z-index: -1;
+  position:absolute ;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  opacity:0;
+
+}
+
+.tabs{
+  
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  text-align:center;
+}
+
+/*==================================================
+  Removing the default bullets and checkbox
+  =================================================*/
+.tabs .tab{ 
+   overflow: hidden;
+}
+
+.tabs .tab .radioClass{
+    display:none;   
+}
+
+/*==================================================
+  styling the icon and label
+  =================================================*/
+.fab{
+    font-size:75px;
+    width:85px;
+    height:85px;
+    color:  white;
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.3);
+    border-radius:50%;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.tabs .tab label {
+    display: block;
+    padding:4vw;
+    cursor: pointer;
+    color: grey; 
+}
+
+
+/*==================================================
+  Effects to show when mouse hovers over the menu
+  =================================================*/
+.fab:hover{
+  box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.3);
+  background-color:rgba(255, 255, 255, 0.3);
+}
+.fab:hover ~p{
+  margin-top:30px; 
+  color:white;
+  transition:all 1s;
+}
+
+/*==================================================
+  Effects to show when a radio is selected
+  =================================================*/
+.tabs>.tab .radioClass:checked + label>.fab{ 
+  
+  box-shadow: 0 0 0 14px #4DDFDC;
+  background-color:#4DDFDC;
+  color:black;
+  transform:scale(1.05);
+}
+.tabs>.tab .radioClass:checked + label {  
+color:white;
+}
+.tabs>.tab .radioClass:checked + label>p {  
+  margin-top:30px;
+}
+.tabs>.tab .radioClass:checked + label + .bg{
+  opacity:1;
+  transition:opacity 1s ease;
+}
+
+/*==================================================
+  Background color for each different div
+  =================================================*/
+#html-bg{
+  background-color:#0A4A8A;
+}
+#js-bg{
+  background: linear-gradient(to right, #11998e, #38ef7d);;
+}
+#css-bg{
+  background:linear-gradient(to right, #00f260, #0575e6);;
+}
+#bootstrap-bg{
+  background:linear-gradient(to right, #800080, #ffc0cb);;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+  
+ <h1>Tabs with font-awesome icon</h1>
+
+<ul class="tabs">
+    <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" checked id="tab1" />
+      <label for="tab1">
+          <i class='fab fa-html5'></i>
+          <p>HTML</p>
+      </label>
+      <div class="bg" id="html-bg"></div>
+    </li>  
+     
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab2" />
+      <label for="tab2"><i class='fab fa-css3'></i> <p>CSS3</p></label>   
+      
+      <div class="bg" id="css-bg"></div>
+    </li>
+
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab3" />
+      <label for="tab3"> <i class="fab fa-node-js"></i><p>Node</p></label>  
+
+       <div class="bg" id="js-bg"></div> 
+      
+    </li>
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab4" />
+      <label for="tab4"><i class="fab fa-bootstrap"></i><p>Bootstrap</p></label>   
+        
+       <div class="bg" id="bootstrap-bg"></div>
+       
+    </li>
+</ul>
+
+</body>
+
+</html>

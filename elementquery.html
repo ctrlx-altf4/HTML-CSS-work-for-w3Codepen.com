@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/eqcss/1.7.0/EQCSS.min.js"></script>
+<style>
+
+
+
+.parent {
+  width: 165px;
+  margin: 30px;
+  padding: 30px;
+ }
+.parent {
+    border: 1px solid rgba(0,0,0,.2);
+ }
+
+label {
+	padding: 10px;
+  border: 1px solid rgba(0,0,0,.3);
+}
+
+@element label{
+  $this{
+    background:black;
+    color:white;
+  }
+  $parent {
+    background: pink;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="parent">
+    <label> I am from Child node</label>
+  </div>
+  
+</body>
+
+</html>
+

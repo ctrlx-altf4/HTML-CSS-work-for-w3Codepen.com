@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<style>
+ body{
+  background-color:#17E4B2
+}
+.pagination { 
+   background-color: #eee;
+   display: inline-block; 
+   padding:25px;
+    margin-top:40px;
+     border-top-left-radius: 100px 100%;
+  border-bottom-left-radius: 100px 100%;
+  border-top-right-radius: 100px 100%;
+  border-bottom-right-radius: 100px 100%;
+    box-shadow:5px 5px 10px 2px #A4A39B;
+    font-family: 'Anton', sans-serif;
+} 
+#left{
+  margin-right:40px;
+} 
+#right{
+  margin-left:40px;
+}
+.pagination a { 
+
+    font-size:15px; 
+    color: blue; 
+    float: left; 
+    text-align:center;
+    padding:8px  2px;
+    text-decoration: none; 
+    margin-right:18px;
+    width:40px;
+    border-radius:50%;
+    background-color:white;
+  box-shadow:2px 3px 3px 2px #A4A39B;
+  transition: all 0.4s ease;
+} 
+
+#left,#right{
+  font-size:20px;
+  padding:50px;
+  background-color: #eee;
+  border-radius:50%;
+  
+}
+
+.pagination a .active { 
+    background-color:#0D870A; 
+  color:white;
+} 
+.pagination a:hover:not(.active) { 
+    background-color: #1DE417; 
+    color:white;
+} 
+</style>
+</head>
+<body>
+
+<center>
+<a href="#" id="left">&#8592</a>
+<div class="pagination">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#" class="active">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+</div>
+<a href="#" id="right">&#8594</a>
+</center>
+</body>
+
+</html>
+

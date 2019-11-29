@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background:grey;
+}
+.half-colors {
+	padding:0px;
+	position:relative;
+	margin-top:300px;
+	left:50%;
+	font-size:80px;
+	display:inline-block;
+ 	color:#EE2436;
+ 	font-family: 'Chilanka', cursive;
+ 	z-index:1;
+}
+.half-colors:after{
+	content: attr(attribute);
+	color:#FAE140;
+	position:absolute;
+	top:0;
+	left:0;
+	width:60%;
+	overflow:hidden;
+	z-index:2;
+}
+
+.half-colors:before{
+	content: attr(attribute);
+	color:black;
+	position:absolute;
+	top:0;
+	left:0;
+	width:28%;
+	overflow:hidden;
+	z-index:3;
+}
+</style>
+</head>
+<body>
+
+
+
+<span class="half-colors" attribute="B">B</span>
+<span class="half-colors" attribute="E">E</span>
+<span class="half-colors" attribute="L">L</span>
+<span class="half-colors" attribute="G">G</span>
+<span class="half-colors" attribute="I">I</span>
+<span class="half-colors" attribute="U">U</span>
+<span class="half-colors" attribute="M">M</span>
+
+
+</body>
+</html>
+

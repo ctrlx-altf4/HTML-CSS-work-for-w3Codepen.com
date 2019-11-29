@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+html,body{
+  height:100%;
+  width:100%;
+  margin:0px;
+  height:0px;
+}
+
+header{
+  background-image:url(https://images.pexels.com/photos/2903063/pexels-photo-2903063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height:27vw;   
+  box-shadow:2px 2px 2px 2px grey;  
+  color:white;
+  margin:0px;
+  padding:10px;   
+}
+header .logo{
+  float:left;
+  margin-left:25px;
+}
+header nav{
+  margin-top:20px;
+  margin-left:100px;
+}
+header a{
+  text-decoration:none;
+  color:white;
+  margin-left:20px; 
+}
+header .left{
+  float:right;
+}
+header .header-text{
+  position:absolute;
+  top:16vw;
+  margin-left:25px;
+  color:white;
+  transform:translateY(-50%);
+}
+.header-text h2{
+  padding:0px;
+  font-size:3vw;
+  margin:0px;
+  font-weight:1000;
+  font-family: 'Shadows Into Light', cursive;
+}
+.header-text p{
+  width:50%;
+  text-align:justify;
+}
+.header-text button{
+  background-color:rgba(149, 165, 166,0.1);
+  padding:10px;
+  color:white;
+  border:none;
+  border-radius:4px;
+  font-size:20px;
+}
+header .search-box{
+  position:absolute;
+  top:15vw;
+  left:50%;
+  transform:translateX(-50%);
+
+  border:1px solid white;
+  border-radius:5px;
+  padding:0px;
+  width:25%;
+
+  text-align:center;
+}
+header .search-box p{
+  font-size:18px;
+  font-weight: 800;
+}
+.mid-nav{
+  position:absolute;
+  top:25vw;
+  left:50%;
+  transform: translateX(-50%);
+  background:white;
+  padding:15px;
+  width:55%;
+  border-radius:5px;
+  box-shadow:4px 4px 2px 4px black;
+}
+.mid-nav nav{
+  display:flex;
+  justify-content: center;
+}
+.mid-nav nav a{
+  text-decoration:none;
+  color:black;
+  font-size:2vw;
+  font-weight:800;
+  display:block;
+}
+
+.mid-nav nav .vertical{
+  margin:0px 1%;
+  line-height:0.5;
+  border-right:1px solid black;
+  padding-right:2%;
+}
+.mid-nav nav .vertical:nth-last-child(1){
+  border-right:none;
+  margin-right:0px;
+  padding-right:0%;
+}
+.mid-nav nav .vertical p{
+  color:#6D6A6A;
+  line-height:1;
+  font-size:0.8vw;
+
+}
+.mid-nav nav img{
+  position:relative;
+  top:3%;
+  width:3vw;
+  height:3vw;
+}
+#tagline{
+  margin-top:10%;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  font-size:28px;
+}
+.hr-text:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  background-color: #fcfcfa;
+}
+
+.courses{
+  display:flex;
+  margin:1% 10% 5% 10%;
+}
+.courses section{
+  width:25%;
+  height:25vw;
+  margin-right:5%;
+  box-shadow: 3px 3px 3px 3px grey;
+  cursor:pointer;
+  transition: all 1s ease-in-out;
+  transform-style:preserve-3d;
+}
+.courses section:hover{
+  transform: rotateY(180deg);
+}
+.courses section img{
+  width:18vw;
+  height:15vw;
+}
+
+.courses section .back{
+  position:absolute;
+  top:0px;
+  right:0px;
+  background-color:black;
+  width:100%;
+  height:100%;
+  color:white;
+
+  transform: rotateY(180deg);
+}
+.stuck-query{
+  /*display:flex;*/
+  position:relative;
+}
+.stuck-query img{
+  height:30vw;
+  width:25vw;
+  margin-left:10%;
+}
+.stuck-query h1{
+  margin-left:15%;
+  font-family: 'Pacifico', cursive;
+  position:absolute;
+  top:50%;
+  left:45%;
+}
+footer{
+  position:relative;
+  bottom:0px;
+  background:#323232;
+  padding:10px;
+  height:25px;
+
+}
+.left{
+  float:left;
+  margin-left:3%;
+}
+.right{
+  display:inline-block;
+  float:right;
+  margin-right:3%;
+}
+.right a{
+  color:white;
+  margin-right:8px;
+  text-decoration:none;
+}
+.right a:hover{
+  border-bottom: 2px solid white;
+}
+.mid-nav nav .vertical:hover{
+    color:red;
+}
+</style>
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <h2>LOGO</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Syllabus</a>
+        <a href="#">Department</a>
+      </nav>
+      <div class="left">
+        
+      </div>
+    <div class="header-text">
+      <h2>IoE WIkI</h2>
+      <p> A repo to your course. You can find every course material designed as per your syllabus.</p>
+      <button>Get Started <i class="fa fa-arrow-circle-right"></i></button>
+    </div>
+    <div class="search-box">
+      <p><i class="fa fa-search"></i>search</p>
+    </div>
+  </header>
+  <div class="mid-nav">
+    <nav>
+      <img src="https://cdn0.iconfinder.com/data/icons/business-and-finance-9-3/68/440-512.png">
+      <div class="vertical">
+        <a href="#">BCT</a>
+        <p>Computer Engineering</p>
+      </div>
+
+      <img src="http://www.pngall.com/wp-content/uploads/1/Electronic-PNG-Picture.png">
+      <div class="vertical">
+        <a href="#">BEX</a>
+        <p>Electronics Engineering</p>
+      </div>
+
+      <img src="https://i7.pngguru.com/preview/385/71/720/electricity-electrical-engineering-symbol-electrician-clip-art-electrical-cliparts.jpg">
+      <div class="vertical">
+        <a href="#">BEL</a>
+        <p>Electrical Engineering</p>
+      </div>
+
+      <img src="https://mpng.pngfly.com/20181115/wsl/kisspng-civil-engineering-construction-management-project-raqim-construction-company-best-construction-com-5bee48df342810.6655461215423428792137.jpg">
+      <div class="vertical">
+        <a href="#">BCE </a>
+        <p>Civil Engineering</p>
+      </div>
+
+    </nav>
+  </div>
+  <center id="tagline"><hr class="hr-text" data-content="Our Courses"></center>
+  <!-- <div class="courses">
+    <section>
+        <a href="#"></a>
+      <img src="https://images.pexels.com/photos/34600/pexes-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+      <div class="back">
+        <a href="#">Semester 1</a>
+        <a href="#">Semester 2</a>
+        <a href="#">Semester </a>
+        <a href="#">Semester 4</a>
+        <a href="#">Semester 5</a>
+        <a href="#">Semester 6</a>
+        <a href="#">Semester 7</a>
+        <a href="#">Semester 8</a>
+      </div>
+    </section>
+    <section>
+      <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <div class="back">
+        <a href="#">Semester 1</a>
+        <a href="#">Semester 2</a>
+        <a href="#">Semester </a>
+        <a href="#">Semester 4</a>
+        <a href="#">Semester 5</a>
+        <a href="#">Semester 6</a>
+        <a href="#">Semester 7</a>
+        <a href="#">Semester 8</a>
+      </div>
+    </section>
+    <section>
+      <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+ <div class="back">
+        <a href="#">Semester 1</a>
+        <a href="#">Semester 2</a>
+        <a href="#">Semester </a>
+        <a href="#">Semester 4</a>
+        <a href="#">Semester 5</a>
+        <a href="#">Semester 6</a>
+        <a href="#">Semester 7</a>
+        <a href="#">Semester 8</a>
+      </div>
+    </section>
+    <section>
+      <img src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+       <div class="back">
+        <a href="#">Semester 1</a>
+        <a href="#">Semester 2</a>
+        <a href="#">Semester </a>
+        <a href="#">Semester 4</a>
+        <a href="#">Semester 5</a>
+        <a href="#">Semester 6</a>
+        <a href="#">Semester 7</a>
+        <a href="#">Semester 8</a>
+      </div>
+    </section>
+  </div>
+ <div class="stuck-query">
+    <h1> Are You Stuck?? </h1>
+    <img src="https://images.pexels.com/photos/2696299/pexels-photo-2696299.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  </div> -->
+<footer>
+ <div class="left">
+      Copyright ©2019 IoEWIkI | Powered by Ctrlx.Atlf4
+  </div>
+  <div class="right">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy Policty</a>
+
+  </div>
+  </footer>
+</body>
+
+</html>
+

@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+
+body{
+  margin:0px; 
+  padding:0px; 
+  font-family: 'Open Sans', sans-serif;
+}
+header{
+  overflow:hidden;
+  background-color:#fde428; 
+  margin-bottom:50px;
+}
+#logo{
+  font-size:20px; 
+  text-transform:uppercase; 
+  color:#002e5b; 
+  font-weight:bold;
+  float:left;
+  padding: 20px 20px; 
+  margin-left:17%;
+  
+}
+nav{
+  margin-right:17%;
+}
+
+nav a{
+  float:right;
+  text-decoration:none;
+  color:#002e5b; 
+  font-size:18px; 
+  padding: 25px 35px; 
+  display:inline-block; 
+  transition: all 0.5s ease 0s;
+}
+section{
+  width:100%; 
+  max-width:1200px; 
+  margin:0px auto; 
+}
+h1{
+  margin:0px auto; 
+  font-size:26px; 
+  padding:40px 0px; 
+  color:#002e5b; 
+  text-align:center;
+}
+
+h1 span{
+  font-weight:bold;
+}
+
+.content{
+  margin-bottom:60px;
+  width:750px;
+}
+
+.content h2{
+  font-size:18px; 
+  font-weight:500; 
+  color:#002e5b; 
+  border-bottom:1px solid #fde428; 
+  padding-bottom:10px; 
+  margin-bottom:10px;
+}
+
+.content p{
+  font-size:14px; 
+  line-height:22px; 
+  color:#7c7c7c; 
+  text-align:justify;
+}
+
+
+nav a:hover{
+  background-color:#002e5b; 
+  color:#fde428; 
+  transition: all 0.5s ease 0s;
+}
+
+
+
+
+input[type=checkbox], label{
+  display:none;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  #logo{
+    padding:25px 0px;
+  }
+  nav a{
+    padding: 25px 20px; 
+  }
+ 
+}
+
+@media only screen and (max-width: 980px) {
+header{
+  padding:20px 0px;
+}
+#logo{
+  padding:0;
+}
+.hamburger-icon{
+  margin-right:15px;
+}
+.hamburger-icon div{
+  width:25px;
+  height:3px;
+  margin:3px 0;
+  background-color:black;
+}
+input[type=checkbox] {
+  display:none;
+}
+
+label {
+  float:right; 
+  padding:8px 0px; 
+  display:inline-block; 
+  cursor:pointer; 
+}
+input[type=checkbox]:checked ~ nav{
+  display:block;
+}
+
+nav {
+  display:none; 
+  position:absolute; 
+  right:0px; 
+  top:193px; 
+  background-color:#002e5b; 
+  padding:0px;
+  margin-right:15px;
+}
+
+nav a{
+  float:none; 
+  padding:0px; 
+  color:#FFF; 
+  font-size:15px; 
+  padding:10px 20px; 
+  display:block; 
+  border-bottom: 1px solid rgba(225,225,225,0.1);
+}
+}
+
+@media only screen and (max-width: 980px) {
+.content{width:70%;}
+}
+
+@media only screen and (max-width: 568px) {
+h1{padding:25px 0px;}
+h1 span{display:block;}
+}
+
+@media only screen and (max-width: 480px) {
+section {max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+h1{font-size:20px;}
+label{padding:5px 0px;}
+#logo{font-size: 20px;}
+
+}
+
+@media only screen and (max-width: 320px) {
+h1 {padding: 20px 0px;}
+}
+
+</style>
+</head>
+<body>
+  
+<h1><span>Responsive Navigation Menu</span> Using Only CSS</h1>
+
+<header>
+<section>
+<div id="logo">OnAirCode</div>
+<input type="checkbox" id="toggle">
+<label for="toggle" class="hamburger-icon">
+  <div></div>
+  <div></div>
+  <div></div>
+</label>
+
+
+<nav>
+<a href='#JavaScript'>JavaScript</a>
+<a href="#CSS">CSS</a>
+<a href="#HTML">HTML</a>
+<a href="#logo">Home</a>
+
+</ul>
+</nav>
+</section>
+</header>
+
+
+<section id="HTML" class="content">
+<h2>HTML</h2>
+<p>In this tutorial, we have built an example of responsive navigation menu with HTML and CSS only. Using the andchor tab we have navigated within the page only. But if you prefer you can change the href value to any other external link to navigate to the link. </p>
+</section>
+
+<section id="CSS" class="content">
+<h2>CSS</h2>
+<p>This navigation Menu is a simple example built with Pure CSS and HTML</p>
+</section>
+
+<section id="JavaScript" class="content">
+<h2>JavaScript</h2>
+<p>In this tutorial, we have built an example of responsive navigation menu without using Javascript. We've made use of media queries and changed the CSS on several checkpoint to make it responsive with differnt width.</p>
+</section>
+
+</body>
+
+</html>

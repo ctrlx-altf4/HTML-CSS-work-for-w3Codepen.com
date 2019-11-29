@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  background: #dadada;
+  padding: 5em;
+}
+.tabs {
+  font-size: 1rem;
+  width: 30vw;
+  border-radius: 5px;
+  width: 50%;
+  margin: 10px auto 30px auto;
+  color: white;
+   background: #3F51B5;
+}
+
+.tabs label {
+ 
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: .1em;
+  transition: all .3s;
+  padding: 1.5em 1.5em;
+  display: block;
+  height: 30px; 
+  box-shadow: 0 0 0 1px rgba(155,155,155,0.3),1px 0 0 rgba(255,255,255,0.9) inset,0 2px 2px rgba(0,0,0,0.1);
+}
+.tabs label:after{
+ content: "\02C5";
+ /* background-color:#82858F;*/
+  padding:2px 8px 2px 8px;
+  border-radius:4px;
+  font-size: 1.8em;
+  font-weight: bold;
+  float: right;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.tabs label:hover {
+     background: #2D3D99;
+}
+
+.tabs input:checked + label,.tabs input:checked + label:hover {
+    background: #f1f2f3;
+    color: #666;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),0 2px 2px rgba(0,0,0,0.1);
+    height: 30px;
+    line-height: 21px;
+    font-size: 13px;
+}
+
+.tabs label:hover:after,.tabs input:checked + label:hover:after {
+    transform: rotate(-180deg);
+}
+
+
+.tabs input {
+    display: none;
+}
+
+.tabs section {
+    background: #fcfcfc;
+    color: #3f3c3c;;
+    overflow: hidden;
+    height: 0;
+    padding-left: 3vw;
+    transition:height 0.3s ease-in-out,box-shadow 0.6s linear;
+}
+
+.tabs section p {
+    color: black;
+    font-size: 1.5vw
+    padding: 20px;
+    
+    
+}
+
+.tabs input:checked ~ section {
+    transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    height:140px;
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
+}
+h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  text-align:center;
+  margin-bottom:10vh;
+}
+/*sub tabs CSS */
+
+.tabs .tabs{
+  display:none;
+  width:100%;
+  margin:0;
+  padding:0;
+  background: #f1f1f1;
+  color: black;
+}
+.tabs input:checked +label +section +.tabs{
+  display:block;
+}
+.tabs .tabs label:hover{
+  background-color:grey;
+}
+
+</style>
+</head>
+<body>
+<h2>Vertical Accordion with Pure CSS</h2>
+  
+ <div class="tabs">
+        <div>
+          <input id="tab1" name="tabs" type="radio">
+          <label for="tab1">HTMl</label>
+          <section class="html">
+            <h4>This is pure HTML CSS tabs designed for your next project</h4>
+            <p>HTML:used for structuring</p>
+          </section>
+          <!--Sub tab -->
+          <div class="tabs">
+          <input id="sub-tab1" name="sub-tabs1" type="checkbox">
+          <label for="sub-tab1">sub-tabs1</label>
+          <section>
+            <h4>This is pure HTML CSS tabs designed for your next project</h4>
+            <p>HTML:used for structuring</p>
+          </section>
+          <input id="sub-tab2" name="sub-tabs1" type="checkbox">
+          <label for="sub-tab2">sub-tabs2</label>
+          <section>
+            <h4>This is pure HTML CSS tabs designed for your next project</h4>
+            <p>HTML:used for structuring</p>
+          </section>
+        </div>
+        </div>
+        <div>
+          <input id="tab2" name="tabs" type="radio">
+          <label for="tab2">CSS</label>
+          <section class="CSS">
+           <h4>This is pure css tabs design using HTML and CSS only</h4>
+           <p>CSS:Used for page styling</p>
+          </section>
+        </div>
+        <div>
+          <input id="tab3" name="tabs" type="radio">
+          <label for="tab3">References</label>
+          <section class="js">
+            <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+          </section>
+        </div>
+        <div>
+          <input id="tab4" name="tabs" type="radio">
+          <label for="tab4">Contact us</label>
+          <section class="js">
+             <h4>In this tutorial we design tabs for website without JavaScript. </h4>
+        <p>JS: Not used</p>
+          </section>
+        </div>
+      </div>
+  
+
+
+
+</body>
+
+</html>

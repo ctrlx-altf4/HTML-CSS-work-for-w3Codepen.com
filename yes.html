@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+
+.tabs{
+    
+    display: block;
+    position: relative;
+}
+
+.tabs .tab{
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.tabs .tab .radioClass{
+    position: absolute;
+}
+
+.tabs .tab label {
+	width:100%;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    color: WHITE;
+    background: GREY;
+}
+
+.tabs .content {
+	display:none;
+    overflow: hidden;
+    width:150px;
+    padding: 25px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    color: #DFDFDF;
+    opacity:0;
+    transition: all 400ms ease-out;
+}
+
+.tabs>.tab .radioClass:checked + label {
+    top: 0;
+    background: #303030;
+    color: #F5F5F5;
+}
+
+.tabs>.tab .radioClass:checked ~ .content {
+   display:block;
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+}
+
+/*#red{
+	background-color: RED;
+}
+#yellow{
+	background-color: YELLOW;
+	color:black;
+}
+#green{
+	background-color: GREEN
+}*/
+</style>
+</head>
+<body>
+
+  <ul class="tabs">
+    
+    <li class="tab">
+        <input class="radioClass" type="radio" name="tabs" checked="checked" id="tab1" />
+        <label for="tab1">Red</label>
+        <div id="red" class="content">
+          <h1>RED</h1>
+          
+        </div>
+    </li>
+    
+    <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab2" />
+      <label for="tab2">Yellow</label>   
+      <div id="yellow" class="content">
+          <h1>YELLOW</h1>
+          
+       </div>
+    </li>
+
+     <li class="tab">
+      <input class="radioClass" type="radio" name="tabs" id="tab3" />
+      <label for="tab3">Green</label>   
+      <div id="green" class="content">
+          <h1>GREEN</h1>
+          
+      </div>
+    </li>
+    
+  </ul>
+  
+
+
+
+</body>
+</html>

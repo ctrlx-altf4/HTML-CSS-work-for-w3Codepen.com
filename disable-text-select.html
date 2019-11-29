@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+.select_disabled{
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+/*p::selection {
+        background: transparent;
+    }
+   
+p::-moz-selection {
+        background: ;transparent
+}
+*/
+
+/*.before_attr:before{
+  content:attr(disabled_text);
+}*/
+
+</style>
+</head>
+<body>
+
+<div>
+You can select and copy this Content.
+</div>
+<div class="select_disabled">
+This text is disabled by setting the user-select property to text none
+<!-- <div class="select_auto">
+  The user-select property for this text is set to auto
+  </div> -->
+</div>
+
+<p id="before_attr">This text will be disable after clicking the bottom below</p>
+<button onClick="funct()">Click me</button>
+<!-- 
+<div> You can select and copy this content.</p>
+<p> You can't select and copy this content.</p>
+
+
+<p class="disabled_selection" disabled_text="These are the text created by after which yo can't select"></p>
+
+<p class="disabled">I am disabled</p>
+<p>I am enabled</p>
+<div onmousedown='return false;' 
+onselectstart='return false;'
+>will I be unselected?</div>
+
+
+<div>Can I be selected</div>
+<div class="mouseEvent1" onmousedown="return false">1. I can't be selected</div>
+<div class="mouseEvent2" onselectStart="return false">2.I Can't be selected</div>
+ --></body>
+ <script>
+  function funt(){
+   var xyz= document.getElementById("before_attr");
+  xyz.style.WebkitUserSelect = "none"; // Chrome, Safari, Opera
+  xyz.style.MozUserSelect = "none"; // Firefox
+  xyz.style.msUserSelect = "none"; // IE 10+
+  xyz.style.userSelect = "none"; // Standard syntax
+  }
+ </script>
+
+</html>

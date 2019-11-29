@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ html{
+  height:100%;
+}
+body{
+ background-image:linear-gradient(to right,#0C796A, #0B9A29);
+ background-size:cover;
+  background-repeat:no-repeat;
+}
+.header{
+  color: White;
+  margin-left:25%;
+  margin-top:50px;
+}
+
+.tab{
+  position:relative;
+}
+.tab li{
+  float:left;
+  overflow:hidden;
+  list-style-type: none;
+  display: block;
+  margin-right:1px;
+  left:70px;
+  cursor: pointer;
+  position: relative;
+  color: WHITE;
+  background: #6543F1;   
+}
+
+.tab li a{
+ 
+  display:block; 
+  text-decoration: none;
+  color:white;
+  padding:10px;
+}
+
+.tab section{
+  z-index:0;
+  width:70%;
+  padding:5px;
+  position: absolute;
+  top:39px;
+  left:110px;
+  color: black;
+  background: white;
+  border-radius:0px 5px 5px 5px;
+  box-shadow: 0px 2px 2px 0px grey;
+}
+
+.tab li:hover{
+  background-color:black;
+}
+
+.tab section:first-child{
+  z-index:1;
+}
+
+.tab section:target{
+  z-index:2;
+  margin:0;
+}
+.tab section:target + li{
+  background:black;
+}
+
+
+</style>
+</head>
+<body>
+  <h2 class="header">Pure HTML CS Built Tab </h2>
+<ul class="tab">
+  <section id="html"><h4>This is pure HTML CSS tabs designed for your next project</h4>
+    <p>HTML: used for page structuring</p>
+  </section>
+  <li><a href="#html">HTML</a></li>
+ 
+  <section id="css"><h4>This is pure css tabs design using HTML and CSS only</h4>
+    <p>CSS: used for page Styling</p>
+  </section>
+  <li><a href="#css">CSS</a></li>
+  
+  <section id="js"><h4>In this tutorial we design tabs for website without JavaScript.</h4><p>JS: not Used.</p></section>
+  <li><a href="#js">JS</a></li>
+   
+</ul> 
+
+
+  
+
+</body>
+</html>
